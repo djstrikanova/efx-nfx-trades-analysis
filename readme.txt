@@ -11,7 +11,7 @@ fetch-efx-nfx-transactions.py
 2. Analyze the transactions for EFX/NFX trades on Defibox (creates efx_nfx_trades.xlsx)
 analyze-efx-nfx-trades.py
 
-3. Create Charts (creates efx_nfx_analysis.html)
+3. Create Charts (creates index.html)
 create-efx-nfx-charts.py
 
 

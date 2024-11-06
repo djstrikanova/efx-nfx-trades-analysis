@@ -47,7 +47,7 @@ class TradeVisualizer:
         }
         return stats
 
-    def create_combined_html(self, output_file: str = "efx_nfx_analysis.html"):
+    def create_combined_html(self, output_file: str = "index.html"):
         """Create a single HTML file with all visualizations and summary stats"""
         # Get summary stats
         stats = self.get_summary_stats()
