@@ -162,7 +162,7 @@ class TradeVisualizer:
         fig1.add_trace(go.Scatter(x=daily_data['date'], y=daily_data['MA30'],
                                  name='30-day MA', line=dict(color='red', dash='dash')), row=1, col=1)
         fig1.add_trace(go.Bar(x=daily_data['date'], y=daily_data['volume'],
-                             name='Volume (EFX)', marker_color='lightblue'), row=2, col=1)
+                             name='Volume (EFX)', marker_color='darkblue'), row=2, col=1)
 
         fig1.update_layout(height=600, title='EFX/NFX Daily Price and Volume',
                           yaxis_title='EFX/NFX Ratio', yaxis2_title='Volume (EFX)')
@@ -172,10 +172,10 @@ class TradeVisualizer:
         
         fig2.add_trace(go.Bar(x=[str(x) for x in self.price_analysis['price_range']], 
                              y=self.price_analysis['efx_amount'],
-                             name='Volume (EFX)', marker_color='lightblue'), row=1, col=1)
+                             name='Volume (EFX)', marker_color='darkblue'), row=1, col=1)
         fig2.add_trace(go.Bar(x=[str(x) for x in self.price_analysis['price_range']], 
                              y=self.price_analysis['trx_id'],
-                             name='Number of Trades', marker_color='lightgreen'), row=1, col=2)
+                             name='Number of Trades', marker_color='darkgreen'), row=1, col=2)
         
         fig2.update_layout(height=400, title='Trading Activity Distribution',
                           xaxis_title='Price Range (EFX/NFX)', xaxis2_title='Price Range (EFX/NFX)',
@@ -190,9 +190,9 @@ class TradeVisualizer:
         fig3 = make_subplots(rows=2, cols=1, subplot_titles=('Top 20 Traders by Volume', 'Trade Count'))
         
         fig3.add_trace(go.Bar(x=top_traders.index, y=top_traders['efx_amount'],
-                             name='Volume (EFX)', marker_color='lightblue'), row=1, col=1)
+                             name='Volume (EFX)', marker_color='darkblue'), row=1, col=1)
         fig3.add_trace(go.Bar(x=top_traders.index, y=top_traders['trx_id'],
-                             name='Number of Trades', marker_color='lightgreen'), row=2, col=1)
+                             name='Number of Trades', marker_color='darkgreen'), row=2, col=1)
         
         fig3.update_layout(height=800, title='Top Trader Analysis',
                           showlegend=True)
