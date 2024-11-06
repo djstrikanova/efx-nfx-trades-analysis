@@ -1,25 +1,4 @@
-1: Get everyone who voted in the DAO. Get all proposals to check their cycle.
-
-Run get-eos-table.py
-table: vote, scope: daoproposals, contract: daoproposals
-create a file daoproposals_vote.csv
-
-Run: get-eos-table.py
-table: proposal, scope: daoproposals, contract: daoproposals
-create a file proposals-cycle.csv
-
-2: Calculate activity of each DAO member who voted in cycles.
-Run cycle-vote.py
-
-3: Document how much NFX each active DAO member has
-Run get-nfx.py
-
-
-
-
-
-
-
+pip install requests pandas openpyxl plotly numpy
 
 
 ##########################################
